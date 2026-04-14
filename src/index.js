@@ -21,7 +21,7 @@ async function main() {
   await loadCommands(client);
   await loadEvents(client);
 
-  client.once('ready', () => {
+  client.once('clientReady', () => {
     console.log(`✅ Nexus Script شغّال — ${client.user.tag}`);
 
     client.user.setPresence({
